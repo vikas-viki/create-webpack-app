@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 // For analyzing the bundle size
 const BuundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
-
+// Don't change anything here - A developer ? -> you can change
 module.exports = {
     mode: 'development',
     entry: {
