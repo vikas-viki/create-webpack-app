@@ -1,15 +1,18 @@
 {
-  "name": "wepack-app",
-  "version": "1.0.0",
+  "name": "wds-webpack",
+  "version": "1.0.2",
   "description": "webpack app with all the requirnments for developing a react app with 2x speed.",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve"
   },
-  "keywords": ["webpack-app", "react"],
+  "keywords": [
+    "webpack-app",
+    "react"
+  ],
   "author": "Web Deve solutions",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
@@ -27,6 +30,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^11.0.0",
     "html-react-parser": "^3.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

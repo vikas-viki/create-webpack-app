@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 // For analyzing the bundle size
 const BuundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
 // Don't change anything here - A developer ? -> you can change
@@ -65,7 +66,13 @@ module.exports = {
             filename: 'index.html',
             template: 'src/main/index.html'
         }),
-        // new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './src/assets', to: 'assets' },
+            ],
+        }),
+
 
     ]
 }
